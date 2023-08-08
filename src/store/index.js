@@ -12,11 +12,18 @@ const store =  createStore({
         user: {
             loggedIn: false,
             data: null
+        },
+        cookie:{
+            isFound:true,
+            data:null
         }
     },
     getters: {
         user(state) {
             return state.user
+        },
+        cookie(state) {
+            return state.cookie
         }
     },
     mutations: {
